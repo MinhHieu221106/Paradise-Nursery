@@ -1,3 +1,4 @@
+import ProductList from './ProductList';
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
@@ -23,7 +24,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        {/* Các route /products và /cart sẽ thêm ở Task 6 và Task 7 */}
+        <Route path="/products" element={<ProductList />} />
       </Routes>
     </BrowserRouter>
   );
